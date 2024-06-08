@@ -1,66 +1,24 @@
-## Foundry
+# TLx Contracts
+These are smart contracts for TLx projects (as needed). 
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Install dependencies
+Run `make update`
 
-Foundry consists of:
+## Build
+Run `make build`
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Test
+### Default Test
+Run `make default_test`
 
-## Documentation
+### Gas Test
+Run `make gas_test`
 
-https://book.getfoundry.sh/
+### Coverage Test
+Run `make coverage_test`
 
-## Usage
+### Fuzz Test
+Run `make fuzz_test`
 
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+### Format code
+Run `make fmt`
