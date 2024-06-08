@@ -25,10 +25,10 @@ jobs:
       - name: Run Forge build
         run: |
           forge --version
-          forge build --sizes
+          make build
         id: build
 
       - name: Run Forge tests
         run: |
-          forge test -vvv
+          make default_test
         id: test
